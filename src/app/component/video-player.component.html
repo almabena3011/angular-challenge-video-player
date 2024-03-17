@@ -1,0 +1,18 @@
+<div class="container-player">
+  <video
+    id="video-source"
+    class="video-js vjs-default-skin p-col-12"
+    controls
+    preload="auto"
+    width="1000"
+    height="600"
+  >
+    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+  </video>
+  <div class="player-control">
+    <button (click)="playVideo()" class="control-button">Play</button>
+    <button (click)="restartVideo()" class="control-button">Restart</button>
+    <button (click)="pauseVideo()" class="control-button">Pause</button>
+    <button (click)="muteVideo()" class="control-button">{{ muteLabel }}</button>
+  </div>
+</div>
